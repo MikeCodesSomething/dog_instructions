@@ -1,0 +1,160 @@
+
+/* General */
+
+* {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-family: 'Roboto', sans-serif;
+    /*Use to draw red borders around everything for debugging 
+    border: 1px solid red;*/
+}
+
+body {
+    /* For some reason the default body has an 8px margin I don't want,this turns that off */
+    margin: 0px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: flex-end;
+    gap: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+.logo {
+    max-height: 80px;
+    /* Using margin-right: auto to split the logo and links in the header */
+    margin-right: auto;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1F2937;
+    justify-content: center;
+    gap: 4%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 400px;
+    padding-bottom: 20px;
+}
+
+img.banner-image {
+    height: 450px;
+    flex-basis: 400px;
+    object-fit: cover
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 6px 25px;
+    border-radius: 8px;
+}
+
+/* Info boxes */
+
+h1 {
+    font-size: 36px;
+    color: #f9faf8;
+    margin-block-end: 0px;
+}
+
+.info-title {
+    font-size: 36px;
+    color: #1F2937;
+    text-align: center;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.thumbnail {
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #3882f6;
+    object-fit: cover;
+}
+
+.thumbnail.end {
+    /* Used to show the bottom of the thumbnail image not the top*/
+    object-position: 0 80%;
+}
+
+.description {
+    color: #1F2937;
+    text-align: center;
+}
+
+.thumbnail-and-desc {
+    max-width: 164px;
+}
+
+/* Quote */
+
+.quote-section {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1F2937;
+    max-width: 640px;
+
+}
+
+.quote-source {
+    font-weight: bold;
+    font-size: 28px;
+    color: #1F2937;
+    text-align: right;
+    align-self: flex-end;
+    }
+
+/* Footer */
+
+.footer {
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.footer-text {
+    font-size: 14px;
+}
